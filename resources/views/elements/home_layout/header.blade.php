@@ -14,13 +14,16 @@
                     <a class="nav-link" href="/">{{__('Home')}} <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{__('Installations')}}</a>
+                    <a class="nav-link" href="#">{{__('Services')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">{{__('Installations')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{__('Installations')}}</a>
+                    <a class="nav-link" href="{{route('contact-us')}}">{{__('Contact Us')}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('about-us')}}">{{__('About Us')}}</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
