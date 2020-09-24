@@ -1,6 +1,8 @@
 /*
+Font Color: #808080
 Font Color: #018BC9
 Icon Color: #018BC9
+Background Color: #018BC9
 
  */
 
@@ -8,6 +10,9 @@ Icon Color: #018BC9
 body {
     margin: 0;
     padding: 0;
+    color: #808080;
+    background: url('../images/background.png') no-repeat top right;
+    background-size: contain;
 }
 
 a {
@@ -25,6 +30,10 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    color: #1d68a7;
 }
 
 /*-----------Image Responsive -------------------*/
@@ -62,8 +71,8 @@ ul {
 }
 
 /*-----------Footer-------------------*/
-footer{
-    background: url('../images/footer.png') center bottom no-repeat ;
+footer {
+    background: url('../images/footer.png') center bottom no-repeat;
     padding-top: 300px;
     padding-bottom: 5px;
     position: relative;
@@ -71,9 +80,11 @@ footer{
     background-position: inherit;
     color: #ffffff;
 }
-footer a{
+
+footer a {
     color: #ffffff;
 }
+
 .footer-social {
     display: inline-flex;
     color: #018BC9;
@@ -114,6 +125,7 @@ footer form .btn {
 footer form input:focus {
     outline: none;
 }
-.border-top{
+
+.border-top {
     border-top: 1px solid #ffffff !important;
 }
