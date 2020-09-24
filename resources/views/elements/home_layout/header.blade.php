@@ -1,6 +1,9 @@
 <section class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="navbar">
-        <a class="navbar-brand" href="#">{{env('APP_NAME')}}</a>
+        <a class="navbar-brand" href="/">
+            <img src="{{asset('images/logo.png')}}" alt="{{env('APP_NAME')}}" class="logo">
+            <span class="logo-text">{{env('APP_NAME')}}</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">{{__('Home')}} <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">{{__('Home')}} <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">{{__('Installations')}}</a>

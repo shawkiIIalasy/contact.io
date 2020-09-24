@@ -36,6 +36,14 @@ h1 {
     color: #1d68a7;
 }
 
+.logo {
+    width: 40px;
+    height: 40px;
+}
+.logo-text{
+    padding: 30px 5px 30px 5px;
+    color: #1d68a7;
+}
 /*-----------Image Responsive -------------------*/
 @media (max-width: 500px ) {
     img {

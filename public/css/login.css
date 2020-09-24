@@ -30,7 +30,6 @@ h1 {
     color: #808080 !important;
     opacity: 0.5 !important; /* Firefox */
 }
-
 /*-----------Card Settings -------------------*/
 .card {
     border-radius: 20px;
@@ -40,7 +39,7 @@ h1 {
     color: #ffffff;
     background: #1d68a7;
     border-radius: 20px 0 0 20px;
-    padding: 175px 40px 100px 40px;
+    padding: 40px;
 }
 
 .card .left-side h1 {
@@ -54,15 +53,32 @@ h1 {
 .card .right-side {
     padding: 100px;
 }
-
+.card .left-side .logo{
+    padding: 0 40px 20px 40px;
+}
+.card .right-side .logo{
+    display: none;
+}
 @media (max-width: 600px) {
     .card .left-side {
         display: none;
     }
-
     .card .right-side {
         padding: 40px;
     }
+    .card .right-side .logo{
+        display: block;
+        padding: 0 0 20px 50px;
+        width: 80%;
+    }
 }
-
+@media (max-width: 900px) {
+    .card .right-side {
+        padding: 100px 40px 100px 40px;
+    }
+    .card .left-side .logo{
+        padding: 0 0 20px 50px;
+        width: 80%;
+    }
+}
 /*-----------End Card Settings -------------------*/

@@ -6,8 +6,8 @@
                 <div class="card">
                     <div class="card-body text-left row p-0">
                         <div class="col-md-6 left-side">
-                            <a href="{{ route('home') }}" class="btn-outline-light">
-                                <img src="{{asset('/images/logo.png')}}" alt="contact.io">
+                            <a href="{{ route('home') }}">
+                                <img src="{{asset('/images/logo.png')}}" alt="contact.io" class="logo">
                             </a>
                             <h1>{{ __('Welcome to :0',[__(env('APP_NAME'))])}}</h1>
                             <p>
@@ -16,6 +16,9 @@
                             <button class="btn btn-outline-light pull-right">{{__('Read more')}}</button>
                         </div>
                         <div class="col-md-6 right-side text-center">
+                            <a href="{{ route('home') }}">
+                                <img src="{{asset('/images/logo.png')}}" alt="contact.io" class="logo">
+                            </a>
                             <h1 class="mb-lg-4">{{ __('Login') }}</h1>
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
