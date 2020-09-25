@@ -16,17 +16,15 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
     <div class="container">
-        @include('elements.home_layout.header')
         <main class="py-4">
             @yield('content')
         </main>
     </div>
 </div>
-@include('elements.home_layout.footer')
 </body>
 </html>

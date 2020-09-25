@@ -1,0 +1,84 @@
+/*
+Font Color: #808080
+Font Color: #018BC9
+Icon Color: #018BC9
+Background Color: #018BC9
+
+ */
+
+/*-----------General Settings -------------------*/
+/*-----------End General Settings -------------------*/
+body {
+    color: #808080;
+}
+
+h1 {
+    color: #1d68a7;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #808080 !important;
+    opacity: 0.5 !important; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #808080 !important;
+    opacity: 0.5 !important; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #808080 !important;
+    opacity: 0.5 !important; /* Firefox */
+}
+/*-----------Card Settings -------------------*/
+.card {
+    border-radius: 20px;
+}
+
+.card .left-side {
+    color: #ffffff;
+    background: #1d68a7;
+    border-radius: 20px 0 0 20px;
+    padding: 40px;
+}
+
+.card .left-side h1 {
+    color: #ffffff;
+}
+
+.card .left-side p {
+    padding: 20px 0 20px 0;
+}
+
+.card .right-side {
+    padding: 100px;
+}
+.card .left-side .logo{
+    padding: 0 40px 20px 40px;
+}
+.card .right-side .logo{
+    display: none;
+}
+@media (max-width: 600px) {
+    .card .left-side {
+        display: none;
+    }
+    .card .right-side {
+        padding: 40px;
+    }
+    .card .right-side .logo{
+        display: block;
+        padding: 0 0 20px 50px;
+        width: 80%;
+    }
+}
+@media (max-width: 900px) {
+    .card .right-side {
+        padding: 100px 40px 100px 40px;
+    }
+    .card .left-side .logo{
+        padding: 0 0 20px 50px;
+        width: 80%;
+    }
+}
+/*-----------End Card Settings -------------------*/
